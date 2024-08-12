@@ -14,7 +14,7 @@ const Login: React.FC = () => {
     const isAuthenticated = email === 'oskarm12@gmail.com' && password === '123';
 
     if (isAuthenticated) {
-      router.push('/dashboard'); // Redirecionar para a página de dashboard
+      router.push('/ripd'); // Redirecionar para a página de dashboard
     } else {
       alert('Invalid email or password');
     }
