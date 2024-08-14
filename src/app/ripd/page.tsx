@@ -75,7 +75,7 @@ const RipdForm = () => {
   const [formData, setFormData] = useState<FormData>(defaultFormData);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, type, checked, value } = e.target;
+    const { name, type, checked, value }:any = e.target;
     setFormData(prevData => ({
       ...prevData,
       [name]: type === 'checkbox' ? checked : value
